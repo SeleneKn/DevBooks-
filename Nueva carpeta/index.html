@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></head>
+<body class="body">
+
+ <header>
+    <div class="container text-center text-primary-emphasis">
+  <div class="row text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+    <div class="col">
+      📚 DevBooks 
+    </div>
+  </div>
+  <div class="container text-center text-primary-emphasis">
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="#">Libros</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categorias</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Todos</a></li>
+      <li><a class="dropdown-item" href="#">Java</a></li>
+      <li><a class="dropdown-item" href="#">JavaScript</a></li>
+      <li><a class="dropdown-item" href="#">Web</a></li>
+      <li><a class="dropdown-item" href="#">Base de datos</a></li>
+      <li><a class="dropdown-item" href="#">DevOps</a></li>
+      <li><hr class="dropdown-divider"></li>  
+    </ul>
+  </li>
+ 
+</ul>
+</div>
+
+
+
+</header>
+
+<div class="container text-center text-primary-emphasis bg-primary-subtle border border-primary-subtle d-grid gap-10 row-gap-3">
+  <div class="row align-items-end">
+    <div class="col text-center">
+      
+    </div>
+    <div class="col">
+      Encuentra tu próximo libro
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
+</div>
+
+
+ <section>
+        <!-- buscador -->
+         <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid gap-10">
+    <a class="navbar-brand fs-6">🔎 Buscar libro...</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+
+</section>
+
+
+
+    <section>
+        <!-- categorías -->
+    </section>
+
+    <section>
+       <!-- LIBROS -->
+<section id="libros" class="py-5">
+   <div class="container">
+       <h2 class="text-center text-primary mb-4"> Libros </h2>
+       <div class="row g-4">
+<!-- LIBRO 1 -->
+<div class="col-12 col-md-6 col-lg-4">
+   <div class="card h-100 shadow-sm">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJrUPIlHU7pPu_146yRjAfYf15OMMxzDoZ3-rwdDBlIQ&s=10" class="card-img-top" alt="Portada de Clean Code">
+   <div class="card-body">
+       <span class="badge bg-primary mb-2"> Programación </span>
+       <h5 class="card-title"> Clean Code </h5>
+       <p class="card-text text-muted"> Robert C. Martin </p>
+       <p class="card-text"> Guía para escribir código limpio, legible y fácil de mantener.</p>
+       <button class="btn btn-primary"> Ver libro </button>
+   </div>
+</div>
+</div>
+<!-- LIBRO 2 -->
+<div class="col-12 col-md-6 col-lg-4">
+   <div class="card h-100 shadow-sm">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9aFcplczF9h5iakWrBLTWBoYqzi9IZ4gLhODJ4klN4g&s=10" class="card-img-top" alt="Portada de Java">
+   <div class="card-body">
+       <span class="badge bg-primary mb-2"> Java </span>
+       <h5 class="card-title"> Java: The Complete Reference </h5>
+       <p class="card-text text-muted"> Herbert Schildt </p>
+       <p class="card-text"> Referencia completa para aprender y trabajar con Java. </p>
+       <button class="btn btn-primary"> Ver libro </button>
+   </div>
+</div>
+</div>
+<!-- LIBRO 3 -->
+<div class="col-12 col-md-6 col-lg-4">
+   <div class="card h-100 shadow-sm">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWm-uw5HNpV4kJB3qGmqjBXoOmlD2v0aHa6ykqkguAMQ&s=10" class="card-img-top"alt="Imagen JS">
+       <div class="card-body">
+           <span class="badge bg-warning text-dark mb-2"> JavaScript </span>
+           <h5 class="card-title"> Eloquent JavaScript </h5>
+           <p class="card-text text-muted"> Marijn Haverbeke </p>
+           <p class="card-text"> Introducción práctica a JavaScript y la programación web. </p>
+           <button class="btn btn-primary"> Ver libro </button>
+       </div>
+   </div>
+</div>
+    </section>
+    <section>
+        <!-- formulario -->
+         <div class="container mb-5" id="prestamo">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow form-card">
+          <div class="card-header bg-white">
+            <h5 class="mb-0 fw-bold">Solicitar un préstamo</h5>
+          </div>
+          <div class="card-body p-4">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" placeholder="Ej: Alvaro Terrones" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="alvaro@email.com" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Libro a solicitar</label>
+                <select class="form-select">
+                  <option>JavaScript Moderno</option>
+                  <option>Python para Todos</option>
+                  <option>HTML & CSS Pro</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Fecha de devolución</label>
+                <input type="date" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-success w-100 py-2">Enviar solicitud</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center p-4 mt-5">
+    <p class="mb-0">DevBooks - Equipo: <br> Alvaro Terrones <br> Adriana Benítez <br> Selene Kanagusico</p>
+  </footer>
+    </section>
+
+</main>
+
+<footer>
+</footer>
+</body>
+</html>
